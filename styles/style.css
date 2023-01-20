@@ -179,7 +179,7 @@ img {
 /* hero */
 .hero {
 	max-width: 1440px;
-	/* margin: 0 auto; */
+	margin: 0 auto;
 	height: 600px;
 	padding-top: 188px;
 	padding-bottom: 188px;
@@ -219,6 +219,7 @@ img {
 	color: var(--btn-text);
 	border-radius: 4px;
 	border: transparent;
+	outline: transparent;
 
 	cursor: pointer;
 
@@ -369,6 +370,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	fill: var(--customers-icon);
+	outline: transparent;
 
 	transition: border-color var(--transition), fill var(--transition);
 }
@@ -407,6 +409,7 @@ img {
 
 	color: var(--primary-color);
 	background-color: var(--btn-color);
+	outline: transparent;
 
 	cursor: pointer;
 
@@ -432,6 +435,7 @@ img {
 .portfolio-link {
 	display: block;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+	outline: transparent;
 
 	transition: box-shadow var(--transition);
 }
@@ -540,6 +544,7 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	outline: transparent;
 
 	transition: background-color var(--transition);
 }
@@ -554,7 +559,10 @@ img {
 }
 
 .footer-form {
+	display: flex;
 	width: 453px;
+	height: 40px;
+	gap: 24px;
 }
 
 .subscribe-title {
@@ -564,13 +572,6 @@ img {
 	letter-spacing: 0.02em;
 
 	color: var(--accent-color);
-}
-
-.subscribe-field {
-	display: flex;
-	width: 453px;
-	height: 40px;
-	gap: 24px;
 }
 
 .footer-input {
@@ -605,6 +606,7 @@ img {
 	background: var(--primary-color);
 	border-radius: 4px;
 	border: transparent;
+	outline: transparent;
 	cursor: pointer;
 
 	transition: background-color var(--transition), box-shadow var(--transition);
@@ -672,6 +674,14 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	cursor: pointer;
+	transition: background-color var(--transition), fill var(--transition);
+}
+
+.btn-close:hover,
+.btn-close:focus {
+	background-color: var(--btn-second-color);
+	fill: var(--btn-text);
+	outline: transparent;
 }
 
 .modal-title {
@@ -798,6 +808,11 @@ img {
 	fill: var(--btn-color);
 }
 
+.modal-policy-link {
+	padding-left: 3px;
+	color: var(--primary-color);
+}
+
 .submit-btn {
 	display: block;
 	margin: 24px auto;
@@ -817,6 +832,7 @@ img {
 	border-radius: 4px;
 	border: transparent;
 	cursor: pointer;
+	outline: transparent;
 
 	transition: background-color var(--transition), box-shadow var(--transition);
 }
