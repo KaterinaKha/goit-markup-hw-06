@@ -707,7 +707,7 @@ img {
 }
 
 .input-text {
-	display: inline;
+	display: block;
 	margin-bottom: 4px;
 
 	font-size: 12px;
@@ -809,7 +809,6 @@ img {
 }
 
 .modal-policy-link {
-	padding-left: 3px;
 	color: var(--primary-color);
 }
 
